@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change BG color</title>
+  <style>
+   
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.6s ease;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: black;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+button {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#start {
+  background: linear-gradient(135deg, #28a745, #34d058);
+  color: white;
+}
+#start:hover {
+  background: linear-gradient(135deg, #1e7c31, #28a745);
+  transform: scale(1.05);
+}
+
+#stop {
+  background: linear-gradient(135deg, #e63946, #ff4d6d);
+  color: white;
+}
+#stop:hover {
+  background: linear-gradient(135deg, #c91832, #e63946);
+  transform: scale(1.05);
+}
+
+#color-code {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px 15px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+
+
+  </style>
+</head>
+<body>
+  <h1>Click start to change Background colour every second & click stop to stop the process </h1>
+ <button id="start">Start</button>
+ <button id="stop">Stop</button>
+
+ <script src="script.js"></script>
+  
+</body>
+</html>
