@@ -8,9 +8,10 @@ const changecolor = function () {
     let val = Math.floor(Math.random() * 16);
     colour += hex[val];
   }
-  console.log(colour);
+ 
   document.body.style.backgroundColor = colour;
   document.querySelector("h1").style.color = "white";
+  console.log(colour);
 }
 
 document.querySelector('#start').addEventListener('click', () => {
